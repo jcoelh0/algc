@@ -1,0 +1,25 @@
+#include<stdio.h>
+#include <stdlib.h>
+
+int nmult=0;
+
+int fibon(int);
+
+int main(void){
+	for(int i = 0;i<5;i++){
+		int result = fibon(i);
+		fprintf(stdout, "Result = %d\n", result);
+	}
+	return 0;	
+}
+
+int fibon(int n){
+	int fib = 0;
+	if(n==0) return fib = 0;
+	if(n==1) return fib = 1; 
+	if(n>1){
+		nmult= nmult+2;
+		return fib = (( 3*fibon(n-1)) + (2*fibon(n-2)));
+	}
+	return fib;
+}

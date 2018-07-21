@@ -1,0 +1,5 @@
+gcc -Wall xxx.c -o a.out
+./a.out
+
+make -f mktime
+./stime

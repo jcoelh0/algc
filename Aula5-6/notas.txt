@@ -1,0 +1,5 @@
+time.h -> fich interface //tudo publico
+time.c -> implementação //tudo privado
+
+make -f mktime
+./stime
